@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel di lusso</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/84bb86a6d3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container flex-between">
+        <a id="logo" href="">Logo</a>
+
+        <nav>
+          <input type="checkbox" id="check" />
+          <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars" style="color: #000000"></i
+          ></label>
+
+          <ul class="header__menu flex-between">
+            <li><a href="">Esperienze</a></li>
+            <li><a href="">Prenotazione</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <img src="/img/sfondo.png" alt="costiera" />
+
+        <div class="container hero__content">
+          <h1>Hotel di lusso</h1>
+          <h2>Boutique hotel</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Accumsan
+            dictum tempor, tempor lectus. Ut fermentum vulputate ac
+            sollicitudin. Mollis augue velit odio convallis justo, imperdiet
+            posuere. Proin massa suspendisse eu turpis faucibus erat malesuada
+            commodo amet.
+          </p>
+          <a class="btn" href="">Prenota un'esperienza</a>
+        </div>
+      </section>
+
+      <section class="experience">
+        <div class="container">
+          <div class="experience__content">
+            <h2 class="head-h2">Pacchetti esperienze</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Accumsan
+              dictum tempor, tempor lectus. Ut fermentum vulputate ac
+              sollicitudin. Mollis augue velit odio convallis justo, imperdiet
+              posuere. Proin massa suspendisse eu turpis faucibus erat malesuada
+              commodo amet.
+            </p>
+          </div>
+
+          <div class="experience__box-card flex-between">
+            <div class="experience__box-card--card">
+              <img src="/img/card 1.png" alt="tracking" />
+              <div class="experience__box-card--card-content">
+                <h3 class="head-h3">Titolo esperienza</h3>
+                <a class="btn" href="">Dettaglio offerta</a>
+              </div>
+            </div>
+
+            <div class="experience__box-card--card">
+              <img src="/img/card 2.png" alt="rafting" />
+              <div class="experience__box-card--card-content">
+                <h3 class="head-h3">Titolo esperienza</h3>
+                <a class="btn" href="">Dettaglio offerta</a>
+              </div>
+            </div>
+
+            <div class="experience__box-card--card">
+              <img src="/img/card 3.png" alt="mountain-bike" />
+              <div class="experience__box-card--card-content">
+                <h3 class="head-h3">Titolo esperienza</h3>
+                <a class="btn" href="">Dettaglio offerta</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="whyus">
+        <div class="container whyus__content">
+          <h2 class="head-h2">Perchè prenotare da noi</h2>
+
+          <div class="whyus__box-vantage flex-between">
+            <div class="whyus__box-vantage--vantage flex-center">
+              <div class="whyus__box-vantage--vantage-icon flex-center">
+                <i class="fa-solid fa-mug-saucer" style="color: #ffffff"></i>
+              </div>
+
+              <h3 class="head-h3">Colazione inclusa</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <div class="whyus__box-vantage--vantage flex-center">
+              <div class="whyus__box-vantage--vantage-icon flex-center">
+                <i class="fa-solid fa-wifi" style="color: #ffffff"></i>
+              </div>
+              <h3 class="head-h3">Wifi Free</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <div class="whyus__box-vantage--vantage flex-center">
+              <div class="whyus__box-vantage--vantage-icon flex-center">
+                <i class="fa-solid fa-shirt" style="color: #ffffff"></i>
+              </div>
+              <h3 class="head-h3">Servizio lavanderia</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+
+          <a class="btn" href="">Prenota un'esperienza</a>
+        </div>
+      </section>
+
+      <section class="book">
+        <div class="container">
+          <div class="book__box">
+            <h2 class="head-h2">Prenota ora</h2>
+
+            <form action="#" method="GET">
+              <label for="experience">Scegli l’esperienza</label>
+              <select id="experience" class="inpt" name="experience">
+                <option value="none">--</option>
+                <option value="tracking">Tracking</option>
+                <option value="rafting">Rafting</option>
+                <option value="mountain_bike">Mountain bike</option>
+              </select>
+
+              <label for="check_in">CheckIn</label>
+              <input id="check_in" class="inpt" type="date" name="check_in" />
+
+              <label for="check_out">CheckOut</label>
+              <input id="check_out" class="inpt" type="date" name="check_out" />
+
+              <button class="btn" type="submit">Verifica disponibilità</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <nav>
+          <ul class="footer__link flex-center">
+            <li><a href="">Informativa privacy -</a></li>
+            <li><a href="">Informative cookie</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
